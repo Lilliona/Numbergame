@@ -1,19 +1,18 @@
 #pragma once //strg+leer = autoergänzung; strg+. = lösungsvorschlag
 #include "Guest.h"
+#include "Computer.h"
 
-#include <stdlib.h>
-#include <time.h>
+
 #include <iostream>
 
 using namespace std;
 
 class Game
 {
-	int random;
+	Computer computer;
 	Guest guest; //variablennamen s. Frank
 	int numberoftries;
-	void set_random();
-	
+
 	int turn();
 	
 public:
