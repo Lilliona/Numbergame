@@ -13,12 +13,11 @@ class Game
 	int numberoftries;
 	void set_random();
 	void set_guest();
-
-	void round();
+	int turn();
+	
 public:
 	Game(void);
 	~Game(void);
-
-		int turn();
+	void round();
 };
 
