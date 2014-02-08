@@ -26,11 +26,11 @@ int Game::turn()
 		{	
 			if(guest<random)
 			{
-				cout << "Your number was too low. Try again." << endl << endl;
+				cout <<endl<< "Your number was too low. Try again." << endl;
 			}
 			else if(guest>random)
 			{
-				cout << "Your number was too high. Try again. " << endl << endl;
+				cout <<endl<< "Your number was too high. Try again. " << endl;
 			}
 			else{
 				cout << "Some mistake has happened" << endl;		
@@ -38,7 +38,7 @@ int Game::turn()
 		}
 		else
 		{
-			cout << "You won, congratulations!"<< endl;
+			cout << "You won, congratulations!"<< endl<<endl<< "==================================="<<endl<<endl;
 		}
 	}while(guest!=random);
 
@@ -54,4 +54,11 @@ Game::~Game(void)
 {
 }
 
-
+void Game::round()
+{	
+	int i;
+	for(i=0;i<3;i++)
+	{
+		turn();
+	}
+}
