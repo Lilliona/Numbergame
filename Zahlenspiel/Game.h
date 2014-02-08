@@ -1,4 +1,5 @@
 #pragma once //strg+leer = autoergänzung; strg+. = lösungsvorschlag
+#include "Guest.h"
 
 #include <stdlib.h>
 #include <time.h>
@@ -9,10 +10,10 @@ using namespace std;
 class Game
 {
 	int random;
-	int guest; //variablennamen s. Frank
+	Guest guest; //variablennamen s. Frank
 	int numberoftries;
 	void set_random();
-	void set_guest();
+	
 	int turn();
 	
 public:
