@@ -1,4 +1,5 @@
 #include "Game.h"
+#include "Computer.h"
 
 int main()
 {	
