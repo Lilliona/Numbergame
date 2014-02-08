@@ -5,11 +5,7 @@ void Game::set_random()
 	random=rand()%101;
 }
 
-void Game::set_guest()
-{
-	cout << "Please insert a value between 0 and 100: ";
-	cin >> guest;
-}
+
 
 int Game::turn()
 {
@@ -18,17 +14,17 @@ int Game::turn()
 	int numberoftries=0;
 
 	do
-	{
-		set_guest();
+	{;
+		guest.set_choosenumber();
 		numberoftries=numberoftries+1;
 			
-		if(guest!=random)
+		if(guest.get_choosenumber()!=random)
 		{	
-			if(guest<random)
+			if(guest.get_choosenumber()<random)
 			{
 				cout <<endl<< "Your number was too low. Try again." << endl;
 			}
-			else if(guest>random)
+			else if(guest.get_choosenumber()>random)
 			{
 				cout <<endl<< "Your number was too high. Try again. " << endl;
 			}
@@ -40,7 +36,7 @@ int Game::turn()
 		{
 			cout << "You won, congratulations!"<< endl<<endl<< "==================================="<<endl<<endl;
 		}
-	}while(guest!=random);
+	}while(guest.get_choosenumber()!=random);
 
 	return numberoftries;
 }
