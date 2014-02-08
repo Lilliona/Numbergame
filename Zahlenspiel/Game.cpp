@@ -1,15 +1,10 @@
 #include "Game.h"
 
-void Game::set_random()
-{
-	random=rand()%101;
-}
-
 
 
 int Game::turn()
 {
-	set_random();
+	computer.set_randomnumber();
 	cout << "The System has generated a new number." << endl;
 	int numberoftries=0;
 
@@ -18,13 +13,13 @@ int Game::turn()
 		guest.set_choosenumber();
 		numberoftries=numberoftries+1;
 			
-		if(guest.get_choosenumber()!=random)
+		if(guest.get_choosenumber()!=computer.get_randomnumber())
 		{	
-			if(guest.get_choosenumber()<random)
+			if(guest.get_choosenumber()<computer.get_randomnumber())
 			{
 				cout <<endl<< "Your number was too low. Try again." << endl;
 			}
-			else if(guest.get_choosenumber()>random)
+			else if(guest.get_choosenumber()>computer.get_randomnumber())
 			{
 				cout <<endl<< "Your number was too high. Try again. " << endl;
 			}
@@ -36,7 +31,7 @@ int Game::turn()
 		{
 			cout << "You won, congratulations!"<< endl<<endl<< "==================================="<<endl<<endl;
 		}
-	}while(guest.get_choosenumber()!=random);
+	}while(guest.get_choosenumber()!=computer.get_randomnumber());
 
 	return numberoftries;
 }
