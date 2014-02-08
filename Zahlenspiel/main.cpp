@@ -5,7 +5,7 @@ int main()
 	srand(time(NULL));
 	Game play;
 	
-	play.turn();
+	play.round();
 
 
 	return 0;
