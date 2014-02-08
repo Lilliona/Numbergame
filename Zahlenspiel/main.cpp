@@ -1,3 +1,27 @@
+#include "Game.h"
+
+int main()
+{	
+	srand(time(NULL));
+	Game play;
+	
+	play.turn();
+
+
+	return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*
 #include <iostream>//für Streams
 #include <stdlib.h>//für Zufallsgenerator
 #include <time.h>//für Zeit in Zufallsgenerator
@@ -70,7 +94,7 @@ public:
 };
 
 class cSpiel: public cSystem,public cSpieler /*Klasse Spiel, vergleicht Eingabe Spieler mit der Zahl dass das System vorgibt
-gibt die Anzahl der Versuche bis zum Treffer zurück*/
+gibt die Anzahl der Versuche bis zum Treffer zurück*//*
 {//!Vererbung raus!
 	int versuch_act;
 public:
@@ -153,7 +177,7 @@ int main() //main so kurz wie möglich
 	return 0;
 }//Anderer Lösungsansatz: cSystem: if(-1) weg, stattdessen in main in for() erstell_Z1() einfügen
 
-
+*/
 /*
 Probleme:
 
