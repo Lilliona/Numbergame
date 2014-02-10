@@ -11,9 +11,10 @@ class Game
 {
 	Computer computer;
 	Guest guest; //variablennamen s. Frank
-	int numberoftries;
-
-	int turn();
+	int currenttries;
+	int get_currenttries();
+	void turn();
+	void averagevalue();
 	
 public:
 	Game(void);
