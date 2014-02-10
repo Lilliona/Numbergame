@@ -5,7 +5,7 @@ using namespace std;
 
 class Guest
 {
-	int choosenumber;
+	char choosenumber;
 
 public:
 	Guest(void);
