@@ -10,7 +10,7 @@ using namespace std;
 class Game
 {
 	Computer computer;
-	Guest guest; //variablennamen s. Frank
+	Guest guest; 
 	int currenttries;
 	int get_currenttries();
 	void turn();
