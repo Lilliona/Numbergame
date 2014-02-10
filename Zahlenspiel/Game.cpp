@@ -1,6 +1,6 @@
 #include "Game.h"
 #include <Windows.h>
-#include <conio.h>
+#include <conio.h> //sleep
 
 
 void Game::turn()
