@@ -1,11 +1,13 @@
 #pragma once
 
 #include <iostream>
+#include <string>
+#include <sstream>
 using namespace std;
 
 class Guest
 {
-	char choosenumber;
+	int choosenumber;
 
 public:
 	Guest(void);
