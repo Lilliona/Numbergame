@@ -6,7 +6,7 @@ int main()
 	srand(time(NULL));
 	Game play;
 	play.round();
-
+//	play.set_choosenumber();
 	return 0;
 }
 
